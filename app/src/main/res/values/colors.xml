@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="secondary">#3CFA2D</color>
     <color name ="tertiary">#009F40</color>
+    <color name="black">#000000</color>
 
 
 </resources>
