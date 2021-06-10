@@ -1,4 +1,4 @@
-package com.example.perroland;
+package com.example.perroland.Auth;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -17,6 +17,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.perroland.MainActivity;
+import com.example.perroland.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -192,7 +194,6 @@ public class RegisterFragment extends Fragment {
 
         db.collection("users").document(user.getUid())
                 .set(datosUsuario);
-
 
     }
 
