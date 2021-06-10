@@ -1,6 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="75dp"
+        android:background="@drawable/supbar"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/frg_config_title"
+            style="@style/tipografiaTituloPestañaActiva"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/config"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="552dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/frg_config_cuenta_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/cuenta"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/frg_config_nombre_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:text="@string/nombre_usuario"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="16sp"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start" />
+
+            <Button
+                android:id="@+id/frg_config_pass_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:text="@string/pass"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start" />
+
+            <Button
+                android:id="@+id/frg_config_email_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:text="@string/btn_email"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white"/>
+
+            <Button
+                android:id="@+id/frg_config_privacidad_btn"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="start"
+                android:padding="16dp"
+                android:text="@string/privacidad"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white" />
+
+            <Button
+                android:id="@+id/frg_config_foto_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@null"
+                android:padding="16dp"
+                android:text="@string/foto_perfil"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white"/>
+
+            <Button
+                android:id="@+id/frg_config_logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:text="@string/cerrar_sesion"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor= "@android:color/black"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start" />
+
+            <LinearLayout
+                android:id="@+id/config_main_lin_notif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:weightSum="30">
+
+                <TextView
+                    android:id="@+id/frg_config_notif_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="fill_vertical"
+                    android:text="@string/notificaciones"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                     />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/frg_config_notificaciones_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#000000"
+                    android:showText="false"
+                    android:thumbTint="@color/white"
+                    android:track="@drawable/btn_comenzar"
+                    android:trackTint="@color/black"
+                    tools:checked="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

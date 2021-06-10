@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <style name="BotonConfig" parent="TextAppearance.AppCompat.Body1" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <style name="tipografiaTituloPestañaActiva" parent="android:TextAppearance.DeviceDefault.Large">
+        <item name="fontFamily">@font/robotoslab_regular</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
