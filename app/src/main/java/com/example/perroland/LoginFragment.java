@@ -100,7 +100,7 @@ public class LoginFragment extends Fragment {
                             FirebaseUser user = mAuth.getCurrentUser();
                             shared(user.getUid());
                             MainActivity actMain = new MainActivity();
-                            //(()getActivity()).activity_main(actMain);
+                            ((MainActivity)getActivity()).activity_main(actMain);
 
                         } else {
                             // If sign in fails, display a message to the user.

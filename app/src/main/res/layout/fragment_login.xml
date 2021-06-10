@@ -86,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:backgroundTint="@color/primary"
-                android:text="Button"
+                android:text="@string/SignIn"
                 android:textColor="@color/white" />
 
             <Button
@@ -95,7 +95,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="50"
                 android:backgroundTint="@color/tertiary"
-                android:text="Button"
+                android:text="@string/register"
                 android:textColor="@color/white" />
 
         </LinearLayout>
