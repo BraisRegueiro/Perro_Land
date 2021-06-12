@@ -54,4 +54,5 @@
     <string name="register">Register</string>
     <string name="Entra">Entra</string>
     <string name="pass_corta">Contraseña corta</string>
+    <string name="sharedpreferences_file">fichero configuración</string>
 </resources>

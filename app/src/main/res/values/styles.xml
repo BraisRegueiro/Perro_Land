@@ -8,7 +8,6 @@
     </style>
 
     <style name="tipografiaTituloPestañaActiva" parent="android:TextAppearance.DeviceDefault.Large">
-        <item name="fontFamily">@font/robotoslab_regular</item>
         <item name="android:textSize">32sp</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
