@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Usuario implements Serializable {
-
     @Expose
     @SerializedName("email")
     private String email;

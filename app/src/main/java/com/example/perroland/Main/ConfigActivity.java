@@ -1,4 +1,4 @@
-package com.example.perroland;
+package com.example.perroland.Main;
 
 import android.app.Activity;
 

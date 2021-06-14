@@ -29,8 +29,9 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="354dp"
-        android:layout_height="552dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="379dp"
+        android:layout_height="400dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="64dp"
@@ -56,65 +57,64 @@
                 android:text="@string/cuenta"
                 android:textColor="@color/black"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/frg_config_nombre_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/nombre_usuario"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textSize="16sp"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white"
-                android:gravity="start" />
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/frg_config_pass_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/pass"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white"
-                android:gravity="start" />
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/frg_config_email_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/btn_email"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:gravity="start"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white"/>
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/frg_config_privacidad_btn"
                 android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
                 android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/privacidad"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white" />
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/frg_config_foto_btn"
@@ -122,28 +122,28 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@null"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/foto_perfil"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:gravity="start"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white"/>
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/frg_config_logout_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start"
                 android:padding="16dp"
                 android:text="@string/cerrar_sesion"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textSize="16sp"
-                android:textColor= "@android:color/black"
-                android:backgroundTint="@android:color/white"
-                android:gravity="start" />
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:id="@+id/config_main_lin_notif"
@@ -160,8 +160,7 @@
                     android:text="@string/notificaciones"
                     android:textColor="@color/black"
                     android:textSize="22sp"
-                    android:textStyle="bold"
-                     />
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/frg_config_notificaciones_switch"
@@ -177,4 +176,15 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/frg_configuracion_foto_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:srcCompat="@tools:sample/avatars" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
