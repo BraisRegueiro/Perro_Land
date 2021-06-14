@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/item_foto_perro"
             android:layout_width="109dp"
             android:layout_height="match_parent"
             tools:srcCompat="@tools:sample/avatars" />
@@ -26,25 +26,25 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/item_nombre_perro"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/item_raza_perro"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/item_edad_perro"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/item_nombre_dueno"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="TextView" />
