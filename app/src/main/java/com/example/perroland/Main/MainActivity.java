@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.perroland.R;
-import com.example.perroland.Usuario;
+import com.example.perroland.Models.Usuario;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;

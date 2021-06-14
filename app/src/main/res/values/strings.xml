@@ -55,4 +55,12 @@
     <string name="Entra">Entra</string>
     <string name="pass_corta">Contraseña corta</string>
     <string name="sharedpreferences_file">fichero configuración</string>
+    <string name="sesion_cerrada">cerrar sesiion</string>
+    <string name="nombre_actualizado">Nombre actualizado</string>
+    <string name="password_actualizada">Contraseña actualizada</string>
+    <string name="tu_nombre">Tu nombre</string>
+    <string name="nuevo_nombre">Nuevo nombre</string>
+    <string name="dialog_privacidad_txt">Privacidad</string>
+    <string name="privacidad_txt">Politica de privacidad</string>
+    <string name="nuevo_email">Nuevo correo</string>
 </resources>
